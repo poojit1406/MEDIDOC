@@ -9,55 +9,84 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+    <style>
+        .nav-link{
+            color : white
+        }
+    </style>
   <title>Medidoc</title>
 </head>
   <body class=bg-body>
 
-    <div class="container py-3">
-  <header>
-    <div class="bg-nav text-light d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-      <a href="/home"> <h3 class="my-0 mr-md-auto font-weight-normal text-light navbar-brand">Medidoc</h3></a>
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-light" href="/disease">Check Disease</a>
-        <a class="me-3 py-2 text-light" href="#">About us</a>
-        <a class="me-3 py-2 text-light" href="#">Contact us</a>
-      <!--  <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a> -->
+    <div class="bg-nav text-light d-flex flex-column flex-md-row align-items-center pb-3 border-bottom" style="background-color: rgb(21, 22, 22);">
+      <h3 class="my-0 mr-md-auto font-weight-normal text-light navbar-brand mt-1" style="margin: 0px 0px 0px 15px; font-size:  25px;">Medidoc</h3></a>
+      <nav class="d-inline-flex  mt-md-2 ms-md-auto">
+        <a class="me-3 py-2 text-light nav-item btn default" href="/home" style="text-decoration: none; font-size: 20px;"><b>Home</b></a>
+        <a class="me-4 py-2 text-light nav-item btn default" href="/about_us" style="text-decoration: none;  font-size: 20px;"><b>About us</b></a>
+        <a class="me-4 py-2 text-light nav-item btn default" href="/contact" style="text-decoration: none;  font-size: 20px;"><b>Contact Us</b></a>
+        <a class="me-4 py-2 text-light nav-item btn default" href="/logout" style="text-decoration: none;  font-size: 19px;"><b>Logout</b></a>
       </nav>
-      <a class="btn btn-outline-primary text-light btn-block" href="/logout">Logout</a>
     </div>
 
+    <!-- <div class="container-fullwidth mb-5">
+        <div class="row py-3">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
+                    <a href="#" class="navbar-brand">Medidoc</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id = "mynavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a href="" class="nav-link"><b>About</b></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><b>About</b></a></li>
+                    </ul>
+                    <ul class="navbar-nav" style="justify-content: end;">
+                        <li class="nav-item"><a href="" class="nav-link"><b>Logout</b></a></li>
+                    </ul>
+                </div>
+            </nav>
+            </div>
+        </div>
+    </div> -->
 <!-- Dashboard or home page -->
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
-        <div class="col">
+        <div class="col md-3">
           <div class="card bg-danger">
-            <div class="card-body">
-            <a href="/disease" class="btn btn-primary"><h3>Check Disease</h3></a>
+            <div class="card-body" >
+              <a href="/disease" class="btn btn-outline-light btn-lg btn-block"><h3  style="margin: 100px 0px; padding: 0px 45px; font-size: 40px;">Check Disease</h3></a>
             </div>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col md-3">
           <div class="card bg-warning">
             <div class="card-body">
-              <h2>Pneumonia</h2>
-              <h4>input image</h4>
+              <a href="/doctors_list" class="btn btn-outline-light btn-lg btn-block"><h3 style="margin: 100px 0px; padding: 0px 45px; font-size: 40px;">List of <br> Doctors</h3></a>
             </div>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col md-3">
           <div class="card bg-info">
+            <div class="card-body" style="text-align: center;">
+              <a href="/hospitals_list" class="btn btn-outline-light btn-lg btn-block"><h3 style="margin: 100px 0px; padding: 0px 35px; font-size: 40px; ">List of  <br> Hospitals</h3></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col md-3">
+          <div class="card bg-success">
             <div class="card-body">
-              <h2>Eye-Blindness</h2>
-              <h4>input image</h4>
+              <a href="/connect_doctor" class="btn btn-outline-light btn-lg btn-block"><h3 style="margin: 76px 0px; padding: 0px 40px; font-size: 40px; ">Connect to Doctors</h3></a>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
+
 
 
 

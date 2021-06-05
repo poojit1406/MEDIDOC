@@ -14,31 +14,28 @@
   <body class="bg-body">
 
 
-    <div class="container py-3">
-  <header>
-    <div class="bg-nav text-light d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-      <a href="/home"> <h3 class="my-0 mr-md-auto font-weight-normal text-light">Medidoc</h3></a>
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-light" href="/disease">Check Disease</a>
-        <a class="me-3 py-2 text-light" href="#">About us</a>
-        <a class="me-3 py-2 text-light" href="#">Contact us</a>
-      <!--  <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a> -->
+    <div class="bg-nav text-light d-flex flex-column flex-md-row align-items-center pb-3 border-bottom" style="background-color: rgb(21, 22, 22);">
+      <h3 class="my-0 mr-md-auto font-weight-normal text-light navbar-brand mt-1" style="margin: 0px 0px 0px 15px; font-size:  25px;">Medidoc</h3></a>
+      <nav class="d-inline-flex  mt-md-2 ms-md-auto">
+        <a class="me-3 py-2 text-light nav-item btn default" href="/home" style="text-decoration: none; font-size: 20px;"><b>Home</b></a>
+        <a class="me-4 py-2 text-light nav-item btn default" href="/about_us" style="text-decoration: none;  font-size: 20px;"><b>About us</b></a>
+        <a class="me-4 py-2 text-light nav-item btn default" href="/contact" style="text-decoration: none;  font-size: 20px;"><b>Contact Us</b></a>
+        <a class="me-4 py-2 text-light nav-item btn default" href="/logout" style="text-decoration: none;  font-size: 19px;"><b>Logout</b></a>
       </nav>
-      <a class="btn btn-outline-primary text-light btn-block" href="/logout">Logout</a>
     </div>
 
 
     <!-- Dashboard or home page -->
-        <div class="container">
+        <div class="container mt-5">
           <div class="row">
             <div class="col mt-100">
               <div class="card bg-danger">
                 <div class="card-body">
-                  <h2><ins>Brain-Tumour</ins></h2><br><br>
+                  <h1><ins>Brain-Tumour</ins></h1><br><br>
                   <form action="#">
-                    <label for="myfile"><strong><ins>Input Your Report: </ins></strong></label><br><br>
-                    <input type="file" id="myfile" name="myfile"><br><br>
-                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Get Analysis">
+                    <label for="myfile"><h4><ins>Input Your Report: </ins></h4></label><br><br>
+                    <input class="form-control" type="file" name="imagefile">
+                    <input class="btn btn-primary mt-3" type="submit" value="Get Analysis">
                   </form>
                 </div>
               </div>
@@ -47,11 +44,13 @@
             <div class="col mt-100">
               <div class="card bg-warning">
                 <div class="card-body">
-                  <h2><ins>Pneumonia</ins></h2><br><br>
-                  <form action="#">
-                    <label for="myfile"><strong><ins>Input Your Report: </ins></strong></label><br><br>
-                    <input type="file" id="myfile" name="myfile"><br><br>
-                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Get Analysis">
+                  <h1><ins>Pneumonia</ins></h1><br><br>
+                  <form action="#" method="post" enctype="multipart/form-data">
+                    <label><h4><ins>Input Your Report: </ins></h4></label><br><br>
+
+                    <input class="form-control" type="file" name="imagefile">
+                    <input class="btn btn-primary mt-3" type="submit" value="Get Analysis">
+
                   </form>
                 </div>
               </div>
@@ -60,11 +59,11 @@
             <div class="col mt-100">
               <div class="card bg-info">
                 <div class="card-body">
-                  <h2><ins>Eye-Blindness</ins></h2><br><br>
+                  <h1><ins>Skin Cancer</ins></h1><br><br>
                   <form action="#">
-                    <label for="myfile"><strong><ins>Input Your Report: </ins></strong></label><br><br>
-                    <input type="file" id="myfile" name="myfile"><br><br>
-                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Get Analysis">
+                    <label for="myfile"><h4><ins>Input Your Report: </ins></h4></label><br><br>
+                    <input class="form-control" type="file" name="imagefile">
+                    <input class="btn btn-primary mt-3" type="submit" value="Get Analysis">
                   </form>
                 </div>
               </div>
