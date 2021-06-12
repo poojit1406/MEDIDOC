@@ -81,18 +81,18 @@ def malariaPage():
 def pneumoniaPage():
     return render_template('pneumonia.html')
 
-@app.route("/predict", methods = ['POST', 'GET'])
-def predictPage():
-    try:
-        if request.method == 'POST':
-            to_predict_dict = request.form.to_dict()
-            to_predict_list = list(map(float, list(to_predict_dict.values())))
-            pred = predict(to_predict_list, to_predict_dict)
-    except:
-        message = "Please enter valid Data"
-        return render_template("home.html", message = message)
+# @app.route("/predict", methods = ['POST', 'GET'])
+# def predictPage():
+#     try:
+#         if request.method == 'POST':
+#             to_predict_dict = request.form.to_dict()
+#             to_predict_list = list(map(float, list(to_predict_dict.values())))
+#             pred = predict(to_predict_list, to_predict_dict)
+#     except:
+#         message = "Please enter valid Data"
+#         return render_template("home.html", message = message)
 
-    return render_template('predict.html', pred = pred)
+    # return render_template('predict.html', pred = pred)
 
 @app.route("/malariapredict", methods = ['POST', 'GET'])
 def malariapredictPage():
@@ -155,7 +155,6 @@ def about_usPage():
 def logout():
     session.pop('user_id')
     return redirect('/')
-
 
 
 
