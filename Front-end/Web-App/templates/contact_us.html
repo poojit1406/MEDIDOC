@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <title>Medidoc</title>
+  <style>
+
+
+    /* Three columns side by side */
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+/* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+/* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+/* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+
+  }
+
+/* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: #555;
+  }
+
+  .img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-size: cover;
+  }
+
+  </style>
+</head>
+  <body class="bg-body">
+
+    <div class="bg-nav text-light d-flex flex-column flex-md-row align-items-center pb-3 border-bottom" style="background-color: rgb(21, 22, 22);">
+      <h3 class="my-0 mr-md-auto font-weight-normal text-light navbar-brand mt-1" style="margin: 0px 0px 0px 15px; font-size:  25px;">Medidoc</h3></a>
+      <nav class="d-inline-flex  mt-md-2 ms-md-auto">
+        <a class="me-4 py-2 text-light nav-item btn default" href="/home" style="text-decoration: none; font-size: 20px;"><b>Home</b></a>
+
+        <div class="dropdown">
+          <button type="button" class="me-4 py-2 text-light nav-item  btn default dropdown-toggle" data-toggle="dropdown" style="text-decoration: none;  font-size: 20px;"><b>Lists</b>
+          </button>
+          <div class=" bg-nav dropdown-menu">
+            <a href="/doctors_list" class="me-4 py-2 text-light nav-item btn default dropdown-item" style="text-decoration: none;  font-size: 20px;"><b>Doctors</b></a>
+            <a href="/hospitals_list" class="me-4 py-2 text-light nav-item btn default  dropdown-item" style="text-decoration: none;  font-size: 20px;"><b>Hospitals</b></a>
+          </div>
+        </div>
+
+        <a class="me-4 py-2 text-light nav-item btn default" href="/about_us" style="text-decoration: none;  font-size: 20px;"><b>About us</b></a>
+        <a class="me-4 py-2 text-light nav-item btn default" href="/contact" style="text-decoration: none;  font-size: 20px;"><b>Contact Us</b></a>
+        <a class="me-4 py-2 text-light nav-item btn default" href="/logout" style="text-decoration: none;  font-size: 19px;"><b>Logout</b></a>
+      </nav>
+    </div>
+
+
+    <h1 class="mt-3" style="text-align:center;"><ins>Meet The Team</ins></h1><br><br>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./static/sajal.jpg" alt="Sajal" style="width:100%">
+          <div class="container">
+            <h2>Sajal Gupta</h2>
+            <p class="title">Team Leader | Algorithm Developer</p>
+            <p>project4th1@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="./static/poojit.jpg" alt="Poojit" style="width:120% height:100%;">
+          <div class="container">
+            <h2>Poojit Lalchandani</h2>
+            <p class="title">Backend Developer</p>
+            <p>project4th2@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="./static/richa.jpeg" alt="Richa" style="width:100%">
+          <div class="container">
+            <h2>Richa Dixit</h2>
+            <p class="title">Frontend Developer</p>
+            <p>project4th3@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+  </body>
+</html>
