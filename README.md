@@ -51,7 +51,7 @@ phpmyadmin-->users(database)-->privelleges-->change password
 10. Run the application
 
 ```
-python mains.py
+python main.py
 ```
 
 ## Dataset Links
