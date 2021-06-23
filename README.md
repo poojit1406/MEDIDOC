@@ -10,14 +10,13 @@ This webapp is developed using Flask Web Framework. The models used to predict t
 
 | Disease        | Type of Model            | Accuracy |
 | -------------- | ------------------------ | -------- |
-| Brain Tumor    | Deep Learning Model(CNN) | 78%      |
-| Malaria        | Deep Learning Model(CNN) | 96%      |
-| Pneumonia      | Deep Learning Model(CNN) | 95%      |
+| Brain Tumor    | Deep Learning Model(CNN) | 94.02%   |
+| Malaria        | Deep Learning Model(CNN) | 95.06%   |
+| Pneumonia      | Deep Learning Model(CNN) | 91.28%   |
 
 ## NOTE
 
 ==> Python version 3.8 was used for the whole project.<br>
-==> You can find all the models in (https://github.com/poojit1406/MEDIDOC/models) folder.
 
 ## Steps to run this application in your system
 
@@ -41,7 +40,7 @@ pip install -r requirements.txt
 start Apache and MySql
 ```
 
-6. Run phpmyadmin on it.
+6. Run phpmyadmin on your browser.
 7. Create a database with name "users" and then import the users.sql file in it.
 8. Create a password for your phpmyadmin.
 
