@@ -60,10 +60,11 @@ python main.py
 All the datasets were used from kaggle.
 
 
-- [Brain Tumor Dataset](https://github.com/poojit1406/MEDIDOC/tree/master/dataset/brain_tumor_dataset)
+- [Brain Tumor Dataset](https://github.com/sajal1302/MEDIDOC/tree/master/dataset/brain_tumor_dataset)
 - [Malaria Dataset](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria)
 - [Pneumonia Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
 ## Links for Python Notebooks used for model creation
 
-- [All Diseases] (https://github.com/poojit1406/MEDIDOC/tree/master/codes)
+- [All Diseases] (https://github.com/sajal1302/MEDIDOC/tree/master/codes)
+
