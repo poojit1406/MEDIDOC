@@ -6,7 +6,7 @@ from flask import Flask, render_template,redirect,request,session,flash,url_for
 
 from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.imagenet_utils import preprocess_input
-from tensorflow.keras.preprocessing import image
+
 
 from PIL import Image
 from datetime import timedelta
